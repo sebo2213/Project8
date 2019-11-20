@@ -29,8 +29,7 @@ function reverseArray(arr) {
 	if(arr.length < 2){
 		return arr;
 	}
-	//terminating case meaning that we are at start of arr so everything is reversed
-	//try popping last element and store it in new element
+	//try popping last element and store it in new element, then concat the rest
 	else{
 		return [arr.pop()].concat(reverseArray(arr));
 		
