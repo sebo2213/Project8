@@ -25,7 +25,6 @@ function reverseArray(arr) {
 	//  full credit you must not define inner functions (i.e. reverseArray must
 	//  be the recursive function) and it must not use more than one parameter.
 	//base case return array
-	let newArr = [];
 	if(arr.length < 2){
 		return arr;
 	}
@@ -56,7 +55,7 @@ function findMin(a) {
 	//terminate at end of array
 	
 	if(a.length == 1){ //this should be the min of array
-		return a;
+		return a[0];
 	}
 	else{
 		if(a[0] < a[a.length - 1]){
