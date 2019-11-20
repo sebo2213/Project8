@@ -61,7 +61,6 @@ function findMin(a) {
 		min = findMin(a);
 	return min;
 }
-}
 
 function stringFromArrays(arr1, arr2) {
 	//  Write the body of stringFromArrays so that it takes two arguments
