@@ -26,13 +26,14 @@ function reverseArray(arr) {
 	//  be the recursive function) and it must not use more than one parameter.
 	//base case return array
 	let newArr = [];
-	if(arr.length == 1){
+	if(arr.length < 2){
 		return arr;
 	}
 	//terminating case meaning that we are at start of arr so everything is reversed
 	//try popping last element and store it in new element
-	if(arr.length > 1){
-		newArr = reverseArray(arr).pop();
+	else{
+		return [arr.pop()].concat(ReverseArray(arr));
+		
 	}	
 }
 
