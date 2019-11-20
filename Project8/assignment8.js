@@ -51,7 +51,7 @@ function findMin(a) {
 	//  array functions in JavaScript.
 	var min = a[0];
 	var temp = a.pop();
-	if(a.length == 1{
+	if(a.length == 1){
 		return min
 	}
 	if(min > test){
