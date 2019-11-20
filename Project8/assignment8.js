@@ -50,29 +50,20 @@ function findMin(a) {
 	//  See http://www.w3schools.com/jsref/jsref_obj_array.asp for useful
 	//  array functions in JavaScript.
 	
-	//compare index with next index
+	//compare index with last index
 	//remove index
 	//recursive call
 	//terminate at end of array
-	if(a.length == 1){
-		return a;
+	
+	if(a.length == 1){ //this should be the min of array
+		return min;
 	}
 	else{
-		var test = a.pop();
-		return findMin(a).valueOf() < test;
+		if(a[0] < a[a.length - 1]){
+			a[0] = a[a.length - 1];
+		}
+		return findMin(a.pop());
 	}
-	
-	var min = a[0];
-	var test = a.pop();
-	if(a.length == 1){
-		return min
-	}
-	if(min > test){
-		min = test
-	}
-	else
-		min = findMin(a);
-	return min;
 }
 
 function stringFromArrays(arr1, arr2) {
