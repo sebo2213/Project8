@@ -32,7 +32,7 @@ function reverseArray(arr) {
 	//terminating case meaning that we are at start of arr so everything is reversed
 	//try popping last element and store it in new element
 	if(arr.size() > 1){
-		newArr [] = reverseArray(arr).pop();
+		newArr = reverseArray(arr).pop();
 	}	
 }
 
