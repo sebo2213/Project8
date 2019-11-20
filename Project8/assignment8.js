@@ -56,13 +56,14 @@ function findMin(a) {
 	//terminate at end of array
 	
 	if(a.length == 1){ //this should be the min of array
-		return min;
+		return a;
 	}
 	else{
 		if(a[0] < a[a.length - 1]){
 			a[0] = a[a.length - 1];
 		}
-		return findMin(a.pop());
+		a.pop();
+		return findMin(a);
 	}
 }
 
