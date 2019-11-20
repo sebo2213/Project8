@@ -58,7 +58,7 @@ function findMin(a) {
 		return a;
 	}
 	else{
-		if(a[0] < a[a.length - 1]){
+		if(a[0] > a[a.length - 1]){
 			a[0] = a[a.length - 1];
 		}
 		a.pop();
