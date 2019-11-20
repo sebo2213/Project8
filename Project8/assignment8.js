@@ -50,7 +50,7 @@ function findMin(a) {
 	//  See http://www.w3schools.com/jsref/jsref_obj_array.asp for useful
 	//  array functions in JavaScript.
 	var min = a[0];
-	var temp = a.pop();
+	var test = a.pop();
 	if(a.length == 1){
 		return min
 	}
