@@ -55,7 +55,7 @@ function findMin(a) {
 	//terminate at end of array
 	
 	if(a.length == 1){ //this should be the min of array
-		return a[0];
+		return a;
 	}
 	else{
 		if(a[0] < a[a.length - 1]){
