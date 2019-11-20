@@ -24,17 +24,15 @@ function reverseArray(arr) {
 	//  THIS FUNCTION MUST USE RECURSION OR 60% WILL BE DEDUCTED.  Also, for
 	//  full credit you must not define inner functions (i.e. reverseArray must
 	//  be the recursive function) and it must not use more than one parameter.
-	var counter = 0;
-	var reverseCounter = arr.size();
 	//base case return array
+	let newArr = [];
 	if(arr.size() == 1){
 		return arr;
 	}
-	//terminating case meaning that we are at center of arr so everything is reversed
-	if(counter >= reverseCounter){
-		return arr;
-	}else{
-		return reverseArray(arr);
+	//terminating case meaning that we are at start of arr so everything is reversed
+	//try popping last element and store it in new element
+	if(arr.size() > 1){
+		newArr [] = reverseArray(arr).pop();
 	}	
 }
 
