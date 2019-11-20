@@ -59,7 +59,7 @@ function findMin(a) {
 	}
 	else{
 		var test = a.pop();
-		return findMin(a) < test;
+		return findMin(a).valueOf() < test;
 	}
 	
 	var min = a[0];
