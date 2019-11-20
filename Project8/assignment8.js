@@ -49,6 +49,18 @@ function findMin(a) {
 	//  the recursive function) and it must not use more than one parameter.
 	//  See http://www.w3schools.com/jsref/jsref_obj_array.asp for useful
 	//  array functions in JavaScript.
+	var min = a[0];
+	var temp = a.pop();
+	if(a.length == 1{
+		return min
+	}
+	if(min > test){
+		min = test
+	}
+	else
+		min = findMin(a);
+	return min;
+}
 }
 
 function stringFromArrays(arr1, arr2) {
